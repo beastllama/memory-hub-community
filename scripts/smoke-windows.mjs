@@ -53,6 +53,11 @@ assert.equal(extraction.status, 0, 'Could not extract the tested ZIP.');
 const bundle = path.join(extract, 'Memory Hub');
 const expectedPaths = [
   'README.md',
+  'docs/VISUAL-QUICK-START.md',
+  'docs/images/01-choose.png',
+  'docs/images/02-review.png',
+  'docs/images/03-save.png',
+  'docs/images/04-ai-preview.png',
   'Start Memory Hub.cmd',
   'THIRD-PARTY-NOTICES.txt',
   'apps/local/dist/hub.js',

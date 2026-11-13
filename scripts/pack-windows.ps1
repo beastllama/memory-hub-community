@@ -43,6 +43,8 @@ $inputs = @(
   'apps/local/dist/server.js', 'apps/local/dist/hub.js', 'apps/local/dist/scan.js',
   'apps/local/dist/types.js', 'apps/local/dist/public/index.html',
   'apps/local/dist/public/style.css', 'apps/local/dist/public/app.js',
+  'docs/VISUAL-QUICK-START.md', 'docs/images/01-choose.png', 'docs/images/02-review.png',
+  'docs/images/03-save.png', 'docs/images/04-ai-preview.png',
   'examples/Trail Notes/README.md', 'examples/Trail Notes/package.json'
 )
 if (Test-Path -LiteralPath (Join-Path $root 'LICENSE') -PathType Leaf) { $inputs += 'LICENSE' }

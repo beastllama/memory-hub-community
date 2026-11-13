@@ -6,6 +6,8 @@ Memory Hub reads selected project docs and manifests. It does not run project co
 
 ## Try it
 
+Follow the [visual quick start](docs/VISUAL-QUICK-START.md) to see the buttons and a sample saved note.
+
 Start with [Trail Notes](examples/Trail%20Notes/README.md), a fictional sample project.
 
 1. Select **Choose a project folder**. Pick the sample or a small project you know.
