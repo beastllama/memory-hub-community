@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.turbo/
+.local-data/
+release/
+coverage/
+pnpm-lock.yaml

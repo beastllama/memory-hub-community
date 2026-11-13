@@ -1,0 +1,21 @@
+{
+  "name": "@memory-hub/local",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-public.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "dev": "node dist/server.js --open"
+  },
+  "dependencies": {
+    "@memory-hub/runners": "workspace:*",
+    "@memory-hub/scanner": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "vitest": "4.1.12"
+  }
+}

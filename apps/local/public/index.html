@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Memory Hub · Your project notes</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#workspace">Skip to current project</a>
+    <header class="app-header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">m</span> Memory Hub</div>
+      <span class="local-badge">On this device</span>
+    </header>
+    <div class="shell">
+      <aside class="sidebar" aria-label="Projects">
+        <div class="sidebar-heading">
+          <h2>Your projects</h2>
+          <span id="project-count">0</span>
+        </div>
+        <button id="add-project" class="secondary full" disabled>Add a project</button>
+        <button id="update-all" class="primary full" disabled>Update all projects</button>
+        <nav id="projects" aria-label="Choose a project"></nav>
+        <p class="sidebar-note">No Memory Hub account.<br />AI is optional.</p>
+      </aside>
+      <main id="workspace" tabindex="-1">
+        <ol class="steps" aria-label="Progress">
+          <li id="step-choose" aria-current="step"><span>1</span>Choose</li>
+          <li id="step-review"><span>2</span>Review</li>
+          <li id="step-save"><span>3</span>Save</li>
+        </ol>
+        <p id="status" role="status" aria-live="polite"></p>
+        <div id="analysis-progress" hidden>
+          <span id="analysis-elapsed" aria-live="off"></span>
+          <button id="cancel-analysis" class="secondary">Cancel analysis</button>
+        </div>
+        <div id="error" role="alert" hidden></div>
+        <div id="batch-result" role="status" hidden></div>
+        <section id="ai-panel" class="ai-panel" aria-labelledby="ai-title" hidden></section>
+        <div id="content">
+          <h1>Open your project notes.</h1>
+          <p>Connecting to the local app.</p>
+        </div>
+      </main>
+    </div>
+    <dialog id="ai-share-dialog" aria-labelledby="ai-share-title">
+      <h2 id="ai-share-title">Review what Codex will receive</h2>
+      <p id="ai-share-account"></p>
+      <p>
+        The request includes the excerpts below. They may contain private text. If in doubt, cancel.
+      </p>
+      <pre id="ai-share-preview" class="preview"></pre>
+      <div class="save-actions">
+        <button id="cancel-ai-share" class="secondary" autofocus>Cancel</button>
+        <button id="send-ai-share" class="primary">Send to Codex</button>
+      </div>
+    </dialog>
+    <footer>
+      Community preview. Notes are saved as Markdown. Native chat memory is not updated.
+    </footer>
+  </body>
+</html>
