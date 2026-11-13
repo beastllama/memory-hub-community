@@ -49,3 +49,7 @@ Use **Use another AI manually** to review and copy a prompt to another tool. AI 
 ## Checks and feedback
 
 Run `pnpm verify` for formatting, type checks, tests, and the build. Unit tests use fixtures, not live AI. Report bugs with the app version, operating system, and steps to reproduce on the sample. Remove local paths and private project details. Never attach a raw log, project file, or credential.
+
+## License
+
+Memory Hub source code is available under the [MIT License](LICENSE).
